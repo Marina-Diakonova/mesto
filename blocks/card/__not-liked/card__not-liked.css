@@ -1,0 +1,15 @@
+.card__not-liked {
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 19px;
+    background: no-repeat transparent center url("../../../images/like_button.svg");
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+}
+
+.card__not-liked:hover {
+    opacity: 0.5;
+}
+

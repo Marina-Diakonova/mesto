@@ -1,0 +1,23 @@
+.cards {
+    margin: 0;
+    padding: 11.5% 0 0;
+    list-style-type: none;
+}
+
+@media screen and (min-width: 767px) {
+    .cards {
+        margin: 0 auto;
+        padding: 5.3% 0 0;
+        display: grid;
+        grid-template-columns: min-content min-content;
+        grid-gap: 17px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(3, min-content);
+        padding: 4.5% 0 0;
+    }
+}

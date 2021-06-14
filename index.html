@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="pages/index.css">
+    <title>Mesto</title>
+</head>
+<body class="content">
+
+<!-----------------НАЧАЛО  БЛОКА PAGE----------------------->
+<div class="page">
+
+    <!-----------------НАЧАЛО БЛОКА HEADER----------------------->
+    <header class="header">
+        <img class="header__logo" src="./images/logo.svg" alt="место россия">
+    </header>
+    <!-----------------КОНЕЦ БЛОКА HEADER----------------------->
+
+
+    <!-----------------НАЧАЛО БЛОКА MAIN----------------------->
+    <main class="main">
+
+        <!-----------------НАЧАЛО БЛОКА PROFILE----------------------->
+        <section class="profile">
+            <ul class="profile__block">
+                <li class="profile__image"><img class="profile__image" src="./images/profile_avatar.jpg"
+                                                alt="тут могла быть ваша фотография"></li>
+                <li class="profile__redactor">
+                    <div class="profile__info">
+                        <h1 class="profile__name">Жак-Ив Кусто</h1>
+                        <button class="profile__edit"></button>
+                    </div>
+                    <p class="profile__description">Исследователь океана</p>
+                </li>
+            </ul>
+            <button class="profile__add"></button>
+        </section>
+        <!-----------------КОНЕЦ БЛОКА PROFILE----------------------->
+
+        <!-----------------НАЧАЛО БЛОКА ELEMENTS----------------------->
+        <section class="elements">
+            <ul class="cards">
+                <li class="card">
+                    <img class="card__image" src="./images/elements-kara4aevsk.jpg" alt="тут могла быть ваша картинка">
+                    <div class="card__description">
+                        <p class="card__text">Карачаево-Черкессия</p>
+                        <button class="card__not-liked"></button>
+                    </div>
+                </li>
+                <li class="card">
+                    <img class="card__image" src="./images/elements-elbrus.png" alt="тут будет добавлена картинка">
+                    <div class="card__description">
+                        <p class="card__text">Гора Эльбрус</p>
+                        <button class="card__not-liked"></button>
+                    </div>
+                </li>
+                <li class="card">
+                    <img class="card__image" src="./images/elements-dombai.jpg" alt="тут будет добавлена картинка">
+                    <div class="card__description">
+                        <p class="card__text">Домбай</p>
+                        <button class="card__not-liked"></button>
+                    </div>
+                </li>
+                <li class="card">
+                    <img class="card__image" src="./images/elements-elbrus.png" alt="тут будет добавлена картинка">
+                    <div class="card__description">
+                        <p class="card__text">Гора Эльбрус</p>
+                        <button class="card__not-liked"></button>
+                    </div>
+                </li>
+                <li class="card">
+                    <img class="card__image" src="./images/elements-dombai.jpg" alt="тут будет добавлена картинка">
+                    <div class="card__description">
+                        <p class="card__text">Домбай</p>
+                        <button class="card__not-liked"></button>
+                    </div>
+                </li>
+                <li class="card">
+                    <img class="card__image" src="./images/elements-kara4aevsk.jpg" alt="тут будет добавлена картинка">
+                    <div class="card__description">
+                        <p class="card__text">Карачаево-Черкессия</p>
+                        <button class="card__is-liked"></button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <!-----------------НАЧАЛО БЛОКА ELEMENTS----------------------->
+
+    </main>
+    <!-----------------КОНЕЦ БЛОКА MAIN----------------------->
+
+    <!-----------------НАЧАЛО БЛОКА FOOTER----------------------->
+    <footer class="footer">
+        <p class="footer__description">© 2020 Mesto Russia</p>
+    </footer>
+    <!-----------------КОНЕЦ БЛОКА FOOTER----------------------->
+
+
+    <!-----------------НАЧАЛО БЛОКА POPUP----------------------->
+    <div class="popup">
+        <div class="popup__container">
+            <button class="popup__close"></button>
+            <form class="popup__form">
+                <h2 class="popup__title">Редактировать Профиль</h2>
+                <label for="popup__name" class="popup__title"></label>
+                <input name="popup__name" id="popup__name" type="text" class="popup__name"
+                       placeholder="Жак-Ив Кусто">
+                <label for="popup__description" class="popup__title"></label>
+                <input name="popup__description" id="popup__description" type="text" class="popup__description"
+                       placeholder="Исследователь океана">
+                <button class="popup__save">Сохранить</button>
+            </form>
+        </div>
+    </div>
+    <!-----------------КОНЕЦ БЛОКА POPUP--------------------->
+
+
+</div>
+<!-----------------КОНЕЦ БЛОКА PAGE----------------------->
+
+<script src="scripts/index.js"></script>
+</body>
+<!-----------------КОНЕЦ БЛОКА CONTENT----------------------->
+</html>

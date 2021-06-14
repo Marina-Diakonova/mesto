@@ -1,0 +1,14 @@
+.profile__info {
+    display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media screen and (min-width: 767px) {
+    .profile__info {
+        justify-content: start;
+    }
+}

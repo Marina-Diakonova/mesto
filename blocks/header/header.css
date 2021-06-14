@@ -1,0 +1,31 @@
+.header {
+    margin: 0;
+    padding: 28px 0 0;
+    width: 100%;
+    height: 18vw;
+    border-bottom: 0.5px solid rgba(84, 84, 84, .7);
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+
+@media screen and (min-width: 767px) {
+    .header {
+        width: 76%;
+        height: 74px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .header {
+        width: 880px;
+        padding: 4.5% 0 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header {
+        padding: 3.6% 0 0;
+    }
+}

@@ -1,15 +1,21 @@
 @import url(../vendor/normalize.css);
+
 /*блок с шрифтами*/
 @import url(../vendor/fonts/fonts.css);
+
 /*блок body CONTENT*/
 @import url(../blocks/content/content.css);
+
 /*блок body PAGE*/
 @import url(../blocks/page/page.css);
+
 /* основной блок MAIN*/
 @import url(../blocks/main/main.css);
+
 /* блок HEADER*/
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
+
 /* блок PROFILE*/
 @import url(../blocks/profile/profile.css);
 @import url(./blocks/profile/__block/profile__block.css);
@@ -20,10 +26,13 @@
 @import url(blocks/profile/__description/profile__description.css);
 @import url(../blocks/profile/__edit/profile__edit.css);
 @import url(../blocks/profile/__add/profile__add.css);
+
 /*блок body ELEMENTS*/
 @import url(../blocks/elements/elements.css);
+
 /*блок body CARDS*/
 @import url(../blocks/cards/cards.css);
+
 /*блок body CARD*/
 @import url(../blocks/card/card.css);
 @import url(../blocks/card/__image/card__image.css);
@@ -31,9 +40,11 @@
 @import url(../blocks/card/__text/card__text.css);
 @import url(../blocks/card/__not-liked/card__not-liked.css);
 @import url(../blocks/card/__is-liked/card__is-liked.css);
+
 /*блок body FOOTER*/
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/__description/footer__description.css);
+
 /*блок body POPUP*/
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__form/popup__form.css);

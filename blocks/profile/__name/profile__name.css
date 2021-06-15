@@ -12,6 +12,9 @@
 @media screen and (min-width: 767px) {
     .profile__name {
         padding: 0;
+        display: flex;
+        justify-content: start;
+        text-align: start;
     }
 }
 

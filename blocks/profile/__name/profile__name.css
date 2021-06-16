@@ -12,7 +12,7 @@
     .profile__name {
         padding: 0 17px 0 0;
         text-align: start;
-        width: calc(100%-24px);
+        width: calc(100% - 24px);
     }
 }
 

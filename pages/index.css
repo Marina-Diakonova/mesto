@@ -6,13 +6,14 @@
 /*блок body PAGE*/
 @import url(../blocks/page/page.css);
 /* основной блок MAIN*/
-@import url(../blocks/main/main.css);
+
 /* блок HEADER*/
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__logo/header__logo.css);
 /* блок PROFILE*/
 @import url(../blocks/profile/profile.css);
 @import url(../blocks/profile/__block/profile__block.css);
+@import url(../blocks/profile/__list/profile__list.css);
 @import url(../blocks/profile/__image/profile__image.css);
 @import url(../blocks/profile/__redactor/profile__redactor.css);
 @import url(../blocks/profile/__info/profile__info.css);
@@ -21,7 +22,7 @@
 @import url(../blocks/profile/__edit/profile__edit.css);
 @import url(../blocks/profile/__add/profile__add.css);
 /*блок body ELEMENTS*/
-@import url(../blocks/elements/elements.css);
+
 /*блок body CARDS*/
 @import url(../blocks/cards/cards.css);
 /*блок body CARD*/
@@ -37,10 +38,11 @@
 /*блок body POPUP*/
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/__form/popup__form.css);
+@import url(../blocks/popup/__item/popup__item.css);
 @import url(../blocks/popup/__container/popup__container.css);
 @import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__name/popup__name.css);
-@import url(../blocks/popup/__description/popup__description.css);
+@import url(../blocks/popup/__item/popup__item_name.css);
+@import url(../blocks/popup/__item/popup__item_description.css);
 @import url(../blocks/popup/__close/popup__close.css);
 @import url(../blocks/popup/__save/popup__save.css);
 @import url(../blocks/popup/popup_opened.css);

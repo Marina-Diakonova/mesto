@@ -1,53 +1,36 @@
-//--------------------------Начало блока кода вызова каротчки POPUP-----------------------------
+//----------------------------------------переменные---------------------------------------------
 let callEditProfileButton = document.querySelector('.profile__edit')
 let callPopup = document.querySelector('.popup');
 let callPopupClose = document.querySelector('.popup__close')
-//console.log(callEditProfileButton, callPopup);
+let formElement = document.querySelector('.popup__form')
+let nameInput = document.querySelector('.popup__item_name')
+let jobInput = document.querySelector('.popup__item_description')
+let inputsNamePopup = document.querySelector("input[id='popup__name']")
+let inputsDescriptionPopup = document.querySelector("input[id='popup__description']")
+let profileName = document.querySelector('.profile__name')
+let profileDescription = document.querySelector('.profile__description') 
 
+//------------------------код вызова карточки POPUP и подмена полей из профиля-------------------
 let showPopupCard = function () {
-    callPopup.classList.add('popup_opened')
+    callPopup.classList.add('popup_opened');
+    inputsNamePopup.value = profileName.textContent;
+    inputsDescriptionPopup.value = profileDescription.textContent;
 }
 
+//--------------------------код закрытия карточки POPUP-----------------------------------------
 let closePopupCard = function () {
     callPopup.classList.remove('popup_opened')
 }
 
-callEditProfileButton.addEventListener('click', showPopupCard);
-callPopupClose.addEventListener('click', closePopupCard);
-//---------------------------конец кода вызова карточки POPUP-----------------------------------
-
-
-
-//---------------------------начало кода сохранения данных PROFILE------------------------------
-let formElement = document.querySelector('.popup__form')
-//console.log(formElement);
-let nameInput = document.querySelector('.popup__name')
-let jobInput = document.querySelector('popup__description')
-//console.log(nameInput, jobInput);
-
-
+//---------------------------функция сохранения данных PROFILE-----------------------------------
 function formSubmitHandler(evt) {
     evt.preventDefault();
-    let inputsName = document.querySelector("input[name='popup__name']").value
-    let inputsDescription = document.querySelector("input[name='popup__description']").value
-    let profileName = document.querySelector('.profile__name')
-    let profileDescription = document.querySelector('.profile__description')
-
-    profileName.textContent = inputsName
-    profileDescription.textContent = inputsDescription
+    profileName.textContent = inputsNamePopup.value;
+    profileDescription.textContent = inputsDescriptionPopup.value;
+    closePopupCard();//---закрываем карточку вызвав функцию закрытия прописанную ранее-----------
 }
 
-formElement.addEventListener('submit', formSubmitHandler);
-//---------------------------конец кода сохранения данных PROFILE--------------------------------
-
-
-
-//--------------------------закрываем POPUP при клике на кнопку сохранить------------------------
-
-let SaveButton = document.querySelector('.popup__save')
-let closeSavedChanges = function () {
-    callPopup.classList.remove('popup_opened')
-}
-
-SaveButton.addEventListener('click', closeSavedChanges);
-//-----------------конец кода закрытия POPUP при клике не кнопку сохранить-----------------------
+//------------------------------------все слушатели----------------------------------------------
+callEditProfileButton.addEventListener('click', showPopupCard); //вызов функции открытия попапа
+callPopupClose.addEventListener('click', closePopupCard); //вызов функции закрытия попапа
+formElement.addEventListener('submit', formSubmitHandler); //вызов функции подмены полей

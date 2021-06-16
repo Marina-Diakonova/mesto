@@ -2,7 +2,6 @@
     margin: 0;
     padding: 28px 0 0;
     width: 100%;
-    height: 18vw;
     border-bottom: 0.5px solid rgba(84, 84, 84, .7);
     border-left: none;
     border-right: none;
@@ -12,7 +11,6 @@
 @media screen and (min-width: 767px) {
     .header {
         width: 76%;
-        height: 74px;
         margin: 0 auto;
     }
 }

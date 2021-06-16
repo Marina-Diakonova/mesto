@@ -1,12 +1,11 @@
 .card__description {
     margin: 0 auto;
-    padding: 0;
+    padding: 21px 0 24px;
     display: flex;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     justify-content: space-between;
-    height: 79px;
-    width: 246px;
+    width: 238px;
     align-items: center;
 }

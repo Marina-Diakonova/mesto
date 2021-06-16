@@ -22,7 +22,9 @@
 
 @media screen and (min-width: 1280px) {
     .footer__description {
-        padding: 5.9% 0 5.2%;
+        padding: 71px 0 60px;
+        font-size: 18px;
+        line-height: 22px;
     }
 }
 

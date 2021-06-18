@@ -2,24 +2,25 @@
     font-style: normal;
     font-weight: 500;
     font-size: 27px;
-    line-height: 1;
+    line-height: 33px;
     margin: 0 0;
-    padding: 7.2% 17px 0;
+    padding: 7.2% 0 0 0;
     text-align: end;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 767px) {
     .profile__name {
-        padding: 0 17px 0 0;
+        padding: 25px 0 0 0;
         text-align: start;
-        width: calc(100% - 24px);
     }
 }
 
 @media screen and (min-width: 1024px) {
     .profile__name {
         font-size: 42px;
-        line-height: 0.75;
-        padding: 33px 0 0 0;
+        line-height: 48px;
     }
 }

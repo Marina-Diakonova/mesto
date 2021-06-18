@@ -1,10 +1,13 @@
 .profile__description {
-    margin: 17px 0 0 0;
+    margin: 8px 0 0 0;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 @media screen and (min-width: 767px) {
@@ -17,6 +20,5 @@
     .profile__description {
         font-size: 18px;
         line-height: 22px;
-        
     }
 }

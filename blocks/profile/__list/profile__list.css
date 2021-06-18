@@ -1,21 +1,19 @@
 .profile__list {
-   
+    width: 90%;
+    margin: 0 auto;
 }
+
 
 @media screen and (min-width: 767px) {
     .profile__list {
         margin: 0 0 0 20px;
+        width: 300px;
     }
 }
 
 @media screen and (min-width: 1023px) {
     .profile__list {
         margin: 0 0 0 29px;
-    }
-}
-
-@media screen and (min-width: 1280px) {
-    .profile__list {
-
+        width: 550px;
     }
 }

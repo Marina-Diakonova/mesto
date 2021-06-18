@@ -3,8 +3,8 @@ let callEditProfileButton = document.querySelector('.profile__edit')
 let callPopup = document.querySelector('.popup');
 let callPopupClose = document.querySelector('.popup__close')
 let formElement = document.querySelector('.popup__form')
-let nameInput = document.querySelector('.popup__item-name')
-let jobInput = document.querySelector('.popup__item-description')
+let nameInput = document.querySelector('.popup__item_input_name')
+let jobInput = document.querySelector('.popup__item_input_description')
 let profileName = document.querySelector('.profile__name')
 let profileDescription = document.querySelector('.profile__description')
 

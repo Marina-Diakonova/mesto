@@ -11,10 +11,9 @@
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s;
-    align-items: flex-end;
     position: absolute;
-    top: 80px;
-    right: 5px;
+    top: -38px;
+    right: 0;
 }
 
 .popup__close:hover {
@@ -26,7 +25,7 @@
     .popup__close {
         width: 35px;
         height: 35px;
-        top: 240px;
+        top: -38px;
         right: -38px;
     }
 }

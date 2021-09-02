@@ -4,6 +4,7 @@
     border-radius: 10px;
     overflow: hidden;
     margin: 0 auto 20px;
+    position: relative;
 }
 
 .card:nth-of-type(6) {

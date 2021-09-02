@@ -1,0 +1,16 @@
+.card__is-liked {
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 19px;
+    background: no-repeat transparent center url("../../../images/card__active-like.svg");
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card__is-liked:hover {
+    opacity: 0.5;
+}
+

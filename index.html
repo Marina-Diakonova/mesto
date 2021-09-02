@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1">
@@ -7,121 +8,122 @@
     <link rel="stylesheet" href="pages/index.css">
     <title>Mesto</title>
 </head>
+
 <body class="content">
 
-<!-----------------НАЧАЛО  БЛОКА PAGE----------------------->
-  <div class="page">
+    <!-----------------НАЧАЛО  БЛОКА PAGE----------------------->
+<div class="page">
 
-    <!-----------------НАЧАЛО БЛОКА HEADER----------------------->
-    <header class="header">
-        <img class="header__logo" src="./images/logo.svg" alt="место россия">
-    </header>
-    <!-----------------КОНЕЦ БЛОКА HEADER----------------------->
+        <!-----------------НАЧАЛО БЛОКА HEADER----------------------->
+        <header class="header">
+            <img class="header__logo" src="./images/logo.svg" alt="место россия">
+        </header>
+        <!-----------------КОНЕЦ БЛОКА HEADER----------------------->
 
 
-    <!-----------------НАЧАЛО БЛОКА MAIN----------------------->
-    <main class="main">
+        <!-----------------НАЧАЛО БЛОКА MAIN----------------------->
+        <main class="main">
 
-        <!-----------------НАЧАЛО БЛОКА PROFILE----------------------->
-        <section class="profile">
-            <div class="profile__block">
-                <img class="profile__image" src="./images/profile_avatar.jpg"
-                     alt="тут могла быть ваша фотография">
-                <div class="profile__list">
-                    <div class="profile__info">
-
-                        <h1 class="profile__name">Жак-Ив Кусто</h1>
-                        <button class="profile__edit" type="button"></button>
+            <!-----------------НАЧАЛО БЛОКА PROFILE----------------------->
+            <section class="profile">
+                <div class="profile__block">
+                    <img class="profile__image" src="./images/profile_avatar.jpg" alt="тут могла быть ваша фотография">
+                    <div class="profile__list">
+                        <div class="profile__info">
+                            <h1 class="profile__name">Жак-Ив Кусто</h1>
+                            <button class="profile__edit" type="button"></button>
+                        </div>
+                        <p class="profile__description">Исследователь океана</p>
                     </div>
-                    <p class="profile__description">Исследователь океана</p>
                 </div>
+                <button class="profile__add" type="button"></button>
+            </section>
+            <!-----------------КОНЕЦ БЛОКА PROFILE----------------------->
+
+
+            <!-----------------НАЧАЛО БЛОКА ELEMENTS---------------------->
+            <section class="elements">
+                <ul class="cards">
+
+                </ul>
+            </section>
+            <!-----------------НАЧАЛО БЛОКА ELEMENTS----------------------->
+
+        </main>
+        <!-----------------КОНЕЦ БЛОКА MAIN----------------------->
+
+        <!-----------------НАЧАЛО БЛОКА FOOTER----------------------->
+        <footer class="footer">
+            <p class="footer__description">© 2020 Mesto Russia</p>
+        </footer>
+        <!-----------------КОНЕЦ БЛОКА FOOTER----------------------->
+
+
+        <!-----------------НАЧАЛО БЛОКА POPUP С ВЫЗОВОМ КАРТОЧКИ ИМЯ И ОПИСАНИЕ----------------------->
+        <div class="popup">
+            <div class="popup__container">
+                <button class="popup__close" type="button"></button>
+                <form class="popup__form popup__form_name" name="form">
+                    <h2 class="popup__title">Редактировать профиль</h2>
+                    <label for="popup__name" class="popup__title"></label>
+                    <input name="popup__name" id="popup__name" type="text" class="popup__item popup__item_input_name"
+                        placeholder="">
+                    <label for="popup__description" class="popup__title"></label>
+                    <input name="popup__description" id="popup__description" type="text"
+                        class="popup__item popup__item_input_description" placeholder="">
+                    <button class="popup__save popup__save" type="submit">Сохранить</button>
+                </form>
             </div>
-            <button class="profile__add" type="button"></button>
-        </section>
-        <!-----------------КОНЕЦ БЛОКА PROFILE----------------------->
+        </div>
+        <!-----------------КОНЕЦ БЛОКА POPUP С ВЫЗОВОМ КАРТОЧКИ ИМЯ И ОПИСАНИЕ--------------------------->
 
 
-        <!-----------------НАЧАЛО БЛОКА ELEMENTS----------------------->
-        <section class="elements">
-            <ul class="cards">
-                <li class="card">
-                    <img class="card__image" src="./images/elements-kara4aevsk.jpg" alt="тут могла быть ваша картинка">
-                    <div class="card__description">
-                        <h3 class="card__text">Карачаево-Черкессия</h3>
-                        <button class="card__not-liked" type="button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img class="card__image" src="./images/elements-elbrus.png" alt="тут будет добавлена картинка">
-                    <div class="card__description">
-                        <h3 class="card__text">Гора Эльбрус</h3>
-                        <button class="card__not-liked" type="button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img class="card__image" src="./images/elements-dombai.jpg" alt="тут будет добавлена картинка">
-                    <div class="card__description">
-                        <h3 class="card__text">Домбай</h3>
-                        <button class="card__not-liked" type="button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img class="card__image" src="./images/elements-elbrus.png" alt="тут будет добавлена картинка">
-                    <div class="card__description">
-                        <h3 class="card__text">Гора Эльбрус</h3>
-                        <button class="card__not-liked" type="button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img class="card__image" src="./images/elements-dombai.jpg" alt="тут будет добавлена картинка">
-                    <div class="card__description">
-                        <h3 class="card__text">Домбай</h3>
-                        <button class="card__not-liked" type="button"></button>
-                    </div>
-                </li>
-                <li class="card">
-                    <img class="card__image" src="./images/elements-kara4aevsk.jpg" alt="тут будет добавлена картинка">
-                    <div class="card__description">
-                        <h3 class="card__text">Карачаево-Черкессия</h3>
-                        <button class="card__not-liked" type="button"></button>
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <!-----------------НАЧАЛО БЛОКА ELEMENTS----------------------->
+        <!-----------------НАЧАЛО БЛОКА POPUPCARD С ВЫЗОВОМ КАРТОЧКИ ДЛЯ ДОБАВЛЕНИЯ КАРТОЧКИ С КАРТИНКОЙ----------------------->
+        <div class="popup popup_card">
+            <div class="popup__container">
+                <button class="popup__close popup__close_card" type="button"></button>
+                <form class="popup__form popup__form_card" name="form">
+                    <h2 class="popup__title">Новое место</h2>
+                    <label for="popup__name" class="popup__title"></label>
+                    <input name="popup__name" id="popup__name" type="text" class="popup__item popup__item_input_title"
+                        placeholder="Название">
+                    <label for="popup__description" class="popup__title"></label>
+                    <input name="popup__description" id="popup__description" type="text"
+                        class="popup__item popup__item_input_image" placeholder="Ссылка на картинку">
+                    <button class="popup__save popup__save_card" type="submit">Создать</button>
+                </form>
+            </div>
+        </div>
+        <!-----------------КОНЕЦ БЛОКА POPUPCARD С ВЫЗОВОМ КАРТОЧКИ ДЛЯ ДОБАВЛЕНИЯ КАРТОЧКИ С КАРТИНКОЙ--------------------------->
 
-    </main>
-    <!-----------------КОНЕЦ БЛОКА MAIN----------------------->
+        <!-----------------НАЧАЛО БЛОКА POPUPCARD С ВЫЗОВОМ ПРОСМОТРА ПОБЛИЖЕ КАРТОЧКИ С КАРТИНКОЙ--------------------------------------->
+        <div class="popup popup_call_image ">
+            <div class="popup__edit">
+                <button class="popup__close popup__close_card_image" type="button"></button>
+                <img src=" " class="popup__image_edit">
+                <h3 class="popup__text_edit"></h3>
+            </div>
+        </div>
+        <!-----------------КОНЕЦ БЛОКА POPUPCARD С ВЫЗОВОМ РЕДАКТИРОВАНИЯ КАРТОЧКИ С КАРТИНКОЙ------------------------------------------>
 
-    <!-----------------НАЧАЛО БЛОКА FOOTER----------------------->
-    <footer class="footer">
-        <p class="footer__description">© 2020 Mesto Russia</p>
-    </footer>
-    <!-----------------КОНЕЦ БЛОКА FOOTER----------------------->
 
-    <!-----------------НАЧАЛО БЛОКА POPUP----------------------->
-      <div class="popup">
-          <div class="popup__container">
-              <button class="popup__close" type="button"></button>
-              <form class="popup__form" name="form">
-                  <h2 class="popup__title">Редактировать профиль</h2>
-                  <label for="popup__name" class="popup__title"></label>
-                  <input name="popup__name" id="popup__name" type="text" class="popup__item popup__item_input_name"
-                         placeholder="">
-                  <label for="popup__description" class="popup__title"></label>
-                  <input name="popup__description" id="popup__description" type="text"
-                         class="popup__item popup__item_input_description"
-                         placeholder="">
-                  <button class="popup__save" type="submit">Сохранить</button>
-              </form>
-          </div>
-      </div>
-      <!-----------------КОНЕЦ БЛОКА POPUP----------------------->
+    </div>
+    <!-----------------КОНЕЦ БЛОКА PAGE------------------------------------------>
 
-</div>
-<!-----------------КОНЕЦ БЛОКА PAGE---------------------------->
-
-<script src="scripts/index.js"></script>
+    <!-----------------НАЧАЛО БЛОКА TEMPLATE ELEMENTS ДЛЯ ВСТАВКИ----------------------------->
+    <template id="template-card">
+        <li class="card">
+            <button class="card__trash" type="button"></button>
+            <img class="card__image" src=" " alt=" ">
+            <div class="card__description">
+                <h3 class="card__text"></h3>
+                <button class="card__not-liked" type="button"></button>
+            </div>
+        </li>
+    </template>
+    <!-----------------НАЧАЛО БЛОКА ELEMENTS-------------------------------------------------->
+    <script src="scripts/index.js"></script>
 </body>
-<!-----------------КОНЕЦ БЛОКА CONTENT------------------------->
+<!-----------------КОНЕЦ БЛОКА CONTENT--------------------------------------->
+
 </html>

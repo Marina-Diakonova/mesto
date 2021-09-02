@@ -3,4 +3,6 @@
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
+    visibility: visible;
+    opacity: 1;
 }

@@ -104,17 +104,6 @@ function setCallEditCardImage(cardElement) {
     cardEdit.classList.add('popup_opened');
   });
 };
-//Ребята, привет! Отлично, что нашли разные подходы к решению этой задачи.
-//Есть еще один вариант – когда мы генерируем и рендерим сами карточки, то у нас уже есть все данные по изображению (data).  
-//Соответственно, когда мы добавляем обработчики событий, то для обработчика клика по карточке мы можем уже заранее пробросить  эти данные. 
-//Будет выглядеть это примерно следующим образом:
-//cardImage.addEventListener('click', () => handlePreviewPicture(data));
-//В результате в этом обработчике нам по сути и не нужен будет event, все данные мы уже прокинули аргументом заранее.
-//Плюс в этом подходе мы избегаем лишних манипуляций и поисков внутри DOM. (edited) 
-
-//let cardImage = document.querySelector('.card__image');
-//cardImage.addEventListener('click', () => setCallEditCardImage(data));
-
 
 // КОД ДЛЯ КЛОНИРОВАНИЯ ТЕМПЛЕЙТ 
 function cloneCardTemlate(title, image) {

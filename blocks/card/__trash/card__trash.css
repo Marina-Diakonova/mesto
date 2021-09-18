@@ -10,7 +10,7 @@
     border: none;
     cursor: pointer;
     /*background:no-repeat transparent center url(/images/trashIMG.svg);*/
-    background: no-repeat transparent center url("../../../images/trashIMG.svg");
+    background: no-repeat transparent center url(/../../images/trashIMG.svg);
 }
 
 .card__trash:hover {

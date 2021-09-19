@@ -98,8 +98,8 @@ closeEditCros.addEventListener('click', function () {
 function setCallEditCardImage(cardElement) {
   cardElement.querySelector('.card__image').addEventListener('click', function (evt) {
 
-    document.querySelector(".popup__text_edit").innerText = evt.target.parentElement.closest('.card').querySelector('.card__text').textContent;
-    document.querySelector(".popup__image_edit").src = evt.target.src;
+    document.querySelector(".popup__text-edit").innerText = evt.target.parentElement.closest('.card').querySelector('.card__text').textContent;
+    document.querySelector(".popup__image-edit").src = evt.target.src;
 
     cardEdit.classList.add('popup_opened');
   });

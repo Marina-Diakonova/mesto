@@ -16,7 +16,7 @@
 .popup__item::placeholder {
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #C4C4C4;
     width: 238px;
     font-style: normal;
     font-weight: 400;
@@ -29,7 +29,7 @@
 .popup__item::-webkit-input-placeholder {
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #C4C4C4;
     width: 238px;
     font-style: normal;
     font-weight: 400;
@@ -38,7 +38,7 @@
 .popup__item::-moz-placeholder {
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #C4C4C4;
     width: 238px;
     font-style: normal;
     font-weight: 400;
@@ -47,7 +47,7 @@
 .popup__item:-moz-placeholder {
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #C4C4C4;
     width: 238px;
     font-style: normal;
     font-weight: 400;
@@ -56,7 +56,7 @@
 .popup__item:-ms-input-placeholder {
     font-size: 14px;
     line-height: 17px;
-    color: #000000;
+    color: #C4C4C4;
     width: 238px;
     font-style: normal;
     font-weight: 400;

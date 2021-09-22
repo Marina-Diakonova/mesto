@@ -60,17 +60,17 @@
 
 
         <!-----------------НАЧАЛО БЛОКА POPUP С ВЫЗОВОМ КАРТОЧКИ ИМЯ И ОПИСАНИЕ----------------------->
-        <div class="popup">
+        <div class="popup popup_edit-profile">
             <div class="popup__container">
                 <button class="popup__close" type="button"></button>
                 <form class="popup__form popup__form_name" name="form">
                     <h2 class="popup__title">Редактировать профиль</h2>
                     <label for="popup__name" class="popup__title"></label>
                     <input name="popup__name" id="popup__name" type="text" class="popup__item popup__item_input_name"
-                        placeholder="">
+                        placeholder="Имя">
                     <label for="popup__description" class="popup__title"></label>
                     <input name="popup__description" id="popup__description" type="text"
-                        class="popup__item popup__item_input_description" placeholder="">
+                        class="popup__item popup__item_input_description" placeholder="Вид деятельности">
                     <button class="popup__save popup__save" type="submit">Сохранить</button>
                 </form>
             </div>
@@ -122,6 +122,7 @@
         </li>
     </template>
     <!-----------------НАЧАЛО БЛОКА ELEMENTS-------------------------------------------------->
+    <script src="scripts/initial-сards.js"></script>
     <script src="scripts/index.js"></script>
 </body>
 <!-----------------КОНЕЦ БЛОКА CONTENT--------------------------------------->

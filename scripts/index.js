@@ -18,22 +18,24 @@ const cardTemplate = document.querySelector('#template-card').content;
 const cardName = document.querySelector('.popup__item_input_title');
 const cardLink = document.querySelector('.popup__item_input_image');
 
+// ОТКРЫТИЕ ПОПАП УНИВЕРСАЛЬНАЯ ФУНКЦИЯ
 const openPopup = function (popup) {
     popup.classList.add('popup_opened');
 };
 
+// ЗАКРЫТИЕ ПОПАП УНИВЕРСАЛЬНАЯ ФУНКЦИЯ
 const closePopup = function (popup) {
     popup.classList.remove('popup_opened');
 };
 
-// КОД ВЫЗОВА КАРТОЧКИ POPUP И ПОДМЕНА ПОЛЕЙ ИЗ ПРОФИЛЯ
+// ОТКРЫТИЕ КАРТОЧКИ ПОПАП ПРОФИЛЯ И ПОДМЕНА ПОЛЕЙ
 function showPopupCard() {
     openPopup(popupEditProfile);
     nameInput.value = profileName.textContent;
     jobInput.value = profileDescription.textContent;
 };
 
-// ФУНКЦИЯ СОХРАНЕНИЯ ДАННЫХ КАРТОЧКИ ПРОФИЛЯ PROFILE
+// СОХРАНЕНИЕ ДАННЫХ ИЗ ИНПУТОВ КАРТОЧКИ ПОПАП ПРОФИЛЯ
 function formSubmitHandler(evt) {
     evt.preventDefault();
     profileName.textContent = nameInput.value;
@@ -41,7 +43,7 @@ function formSubmitHandler(evt) {
     closePopup(popupEditProfile);
 };
 
-//УДАЛЕНИЕ КАРТОЧКИ ТЕМПЛЕЙТ ЭЛЕМЕНТА
+// УДАЛЕНИЕ КАРТОЧКИ ТЕМПЛЕЙТ ЭЛЕМЕНТА
 function setEventListeners(cardElement) {
     cardElement.querySelector('.card__trash').addEventListener('click', function (event) {
         const cardElement = event.target.closest('.card');
@@ -49,20 +51,20 @@ function setEventListeners(cardElement) {
     });
 };
 
-// ДЕЛАЕМ ЛАЙК КАРТОЧКЕ
+// ДЕЛАЕМ ЛАЙК КАРТОЧКЕ ТЕМПЛЕЙТ ЭЛЕМЕНТА
 function setEventListenersGetLike(cardElement) {
     cardElement.querySelector('.card__not-liked').addEventListener('click', function (evt) { //функция делания лайка карточке
         evt.target.classList.toggle('card__is-liked');
     });
 };
 
-// ДЕЛАЕМ УДАЛЕНИЕ КАРТОЧКИ ПОПАПА РЕДАКТИРОВАНИЯ КАРТОЧКИ НА КРЕСТИК
+// ЗАКРЫТИЕ КАРТОЧКИ ПРОСМОТРА С КАРТИНКОЙ НАЖАТИЕ НА КРЕСТИК
 closeEditCrosBtn.addEventListener('click', function () {
     const deleteEditCard = closeEditCrosBtn.closest('.popup_call_image');
     deleteEditCard.classList.remove('popup_opened');
 });
 
-// ОТКРЫВАЕМ ПОПАП ДЛЯ РЕДАКТИРОВАНИЯ КАРТОЧКИ
+// ОТКРЫВАЕМ КАРТОЧКУ ДЛЯ ПРОСМОТРА КАРТОЧКИ С КАРТИНКОЙ
 function setCallEditCardImage(cardElement) {
     cardElement.querySelector('.card__image').addEventListener('click', function (evt) {
         document.querySelector(".popup__text-edit").innerText = evt.target.parentElement.closest('.card').querySelector('.card__text').textContent;
@@ -71,7 +73,7 @@ function setCallEditCardImage(cardElement) {
     });
 };
 
-// КОД ДЛЯ КЛОНИРОВАНИЯ КАРТОЧКИ ТЕПМЛЕЙТ ДУБЛЬ ДВА ВОЗВРАЩЕНИЕ КАРТОЧКИ
+// КЛОНИРОВАНИЕ КАРТОЧКИ ТЕПМЛЕЙТ ДУБЛЬ ДВА ВЫНЕСЕНО В ОТДЕЛЬНУЮ ФУНКЦИЮ
 function createCard(name, link) {
     const cardElement = cardTemplate.querySelector('.card').cloneNode(true);
     const image = cardElement.querySelector('.card__image');
@@ -84,7 +86,7 @@ function createCard(name, link) {
     return cardElement;
 };
 
-// КОД ДОБАВЛЕНИЯ КАРТОЧКИ В ОТДЕЛЬНОЙ ФУНКЦИИ
+// ДОБАВЛЕНИЕ КАРТОЧКИ ТЕМПЛЕЙТ ЭЛЕМЕНТА ВЫНЕСЕНО В ОТДЕЛЬНУЮ ФУНКЦИЮ
 function addCard(cardElement) {
     cardContainer.prepend(cardElement);
 };

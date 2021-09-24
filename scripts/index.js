@@ -11,7 +11,7 @@ const addNewCardBtn = document.querySelector('.profile__add');
 const popupCard = document.querySelector('.popup_card');
 const popupCloseCardImageBtn = document.querySelector('.popup__close_card');
 const closeEditCrosBtn = document.querySelector('.popup__close_card_image');
-const cardEdit = document.querySelector('.popup_call_image');
+const popupImage = document.querySelector('.popup_call_image');
 const popupSaveCardImage = document.querySelector('.popup__form_card');
 const cardContainer = document.querySelector('.cards');
 const cardTemplate = document.querySelector('#template-card').content;
@@ -69,7 +69,7 @@ function setCallEditCardImage(cardElement) {
     cardElement.querySelector('.card__image').addEventListener('click', function (evt) {
         document.querySelector(".popup__text-edit").innerText = evt.target.parentElement.closest('.card').querySelector('.card__text').textContent;
         document.querySelector(".popup__image-edit").src = evt.target.src;
-        cardEdit.classList.add('popup_opened');
+        openPopup(popupImage);
     });
 };
 

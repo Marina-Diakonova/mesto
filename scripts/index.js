@@ -17,6 +17,8 @@ const cardContainer = document.querySelector('.cards');
 const cardTemplate = document.querySelector('#template-card').content;
 const cardName = document.querySelector('.popup__item_input_title');
 const cardLink = document.querySelector('.popup__item_input_image');
+const popupTextEdit = document.querySelector(".popup__text-edit");
+const popupImageEdit = document.querySelector(".popup__image-edit");
 
 // ОТКРЫТИЕ ПОПАП УНИВЕРСАЛЬНАЯ ФУНКЦИЯ
 const openPopup = function (popup) {
@@ -67,8 +69,9 @@ closeEditCrosBtn.addEventListener('click', function () {
 // ОТКРЫВАЕМ КАРТОЧКУ ДЛЯ ПРОСМОТРА КАРТОЧКИ С КАРТИНКОЙ
 function setCallEditCardImage(cardElement) {
     cardElement.querySelector('.card__image').addEventListener('click', function (evt) {
-        document.querySelector(".popup__text-edit").innerText = evt.target.parentElement.closest('.card').querySelector('.card__text').textContent;
-        document.querySelector(".popup__image-edit").src = evt.target.src;
+        popupTextEdit.innerText = evt.target.parentElement.closest('.card').querySelector('.card__text').textContent;
+        popupImageEdit.src = evt.target.src;
+        popupImageEdit.alt = evt.target.parentElement.closest('.card').querySelector('.card__text').textContent;//
         openPopup(popupImage);
     });
 };
